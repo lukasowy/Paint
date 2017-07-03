@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="Mouse tracker">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+    <section>
+        <div class="menu">
+            <ul class="tools">
+                <li class="tool-item color"><button calss="button"><img src="/img/software_pencil.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/software_shape_rectangle.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/software_paintbrush.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/software_layout.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/oval.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/polyline.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/software_vector_line.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/paint-bucket.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button"><img src="/img/rgb.png" alt=""></button></li>
+                <li class="tool-item"><button calss="button">Clear</button></li>
+
+            </ul>
+
+            <div class="free">
+                <div>
+                    <div id="myColor"  >
+                        <span>Color:</span>
+                        <input type="color" value="#ff0000">
+                    </div>
+                    <div id="slider">
+                        <span id="lineSize">Line size: 05</span>
+                        <input value="5"  type="range" min="1" max="80" />
+                    </div>
+                </div>
+                <p id="xy"></p>
+            </div>
+        </div>
+
+        <div class="tracker">
+            <canvas></canvas>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
